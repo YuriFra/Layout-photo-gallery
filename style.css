@@ -1,10 +1,35 @@
+/**responsive design**/
+@media only screen and (max-width: 300px) {
+    form {
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 301px) and (max-width: 767px) {
+    form {
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+    li {
+        display: inline-block;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/**content**/
 body {
     color: darkslategray;
     font-size: 1.5rem;
 }
 li {
     list-style-type: none;
-    display: inline-block;
+
     padding-right: 10px;
 }
 a {
@@ -14,14 +39,19 @@ a {
 a:hover {
     color: darkgoldenrod;
 }
-p, input {
+/****main****/
+#first {
+
+}
+#second {
+    color: darkgoldenrod;
+    font-size: 1rem;
+}
+/****footer****/
+footer p, input {
     text-align: center;
 }
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 #url, #email {
     padding-top: 4px;
     padding-bottom: 4px;
@@ -29,8 +59,11 @@ form {
 }
 .button {
     color: white;
-    background-color: green;
+    background-color: darkgoldenrod;
     border: none;
     border-radius: 5px;
     padding: 0px 15px 0px 15px;
+}
+.button:hover {
+    background-color: darkslategray;
 }
