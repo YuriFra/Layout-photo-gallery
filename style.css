@@ -1,0 +1,36 @@
+body {
+    color: darkslategray;
+    font-size: 1.5rem;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+a:hover {
+    color: darkgoldenrod;
+}
+p, input {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#url, #email {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 5px;
+}
+.button {
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 15px 0px 15px;
+}
