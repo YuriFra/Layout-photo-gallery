@@ -1,19 +1,39 @@
-/**responsive design**/
-@media only screen and (max-width: 300px) {
+/***general***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: darkslategray;
+    background-color: black;
+}
+/**responsiveness**/
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 1.1rem;
+    }
+    li {
+        display: inline;
+        padding: 10px 0 10px 10px;
+    }
+    .first {
+        display: block;
+    }
     form {
         display: block;
         text-align: center;
     }
 }
-@media only screen and (min-width: 301px) and (max-width: 767px) {
-    form {
-        display: block;
-        text-align: center;
-    }
-}
+
 @media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.5rem;
+    }
     li {
         display: inline-block;
+        padding: 10px 10px 10px 0;
     }
     form {
         display: flex;
@@ -22,15 +42,13 @@
     }
 }
 
-/**content**/
-body {
-    color: darkslategray;
-    font-size: 1.5rem;
+/***header***/
+header {
+    background-color: white;
+    margin-top: 5%;
 }
 li {
     list-style-type: none;
-
-    padding-right: 10px;
 }
 a {
     text-decoration: none;
@@ -40,29 +58,69 @@ a:hover {
     color: darkgoldenrod;
 }
 /****main****/
-#first {
-
+main {
+    background-color: white;
+}
+.row{
+    display: flex;
+    height: calc(80vh/4);
+    -moz-box-shadow: inset 0 -10px 15px -5px black;
+    -webkit-box-shadow: inset 0 -10px 15px -5px black;
+    box-shadow: inset 0 -10px 15px -5px black;
+}
+article {
+    background-color: darkslategrey;
+    padding: 15px 0 0 15px;
+    width: 66.66%;
+}
+.first {
+    color: darkgoldenrod;
+    padding: 0 10px 0 10px;
 }
 #second {
-    color: darkgoldenrod;
+    color: white;
     font-size: 1rem;
+    padding: 0 10px 0 10px;
+}
+
+.row1 img:first-child, .row2 img, .row3 img:first-child {
+    width: 33.33%;
+    object-fit: cover;
+}
+.row3 img:last-child {
+    width: 60%;
+    object-fit: cover;
+}
+.row4 img:first-child {
+    width: 50%;
+    object-fit: cover;
+}
+.row4 img:last-child {
+    width: 33.33%;
+    object-fit: cover;
+}
+.row4 {
+    justify-content: space-between;
 }
 /****footer****/
+footer {
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+}
 footer p, input {
     text-align: center;
 }
-
 #url, #email {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 .button {
     color: white;
     background-color: darkgoldenrod;
     border: none;
-    border-radius: 5px;
-    padding: 0px 15px 0px 15px;
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
 }
 .button:hover {
     background-color: darkslategray;
