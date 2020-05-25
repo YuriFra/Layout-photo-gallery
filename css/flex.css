@@ -18,8 +18,14 @@ body {
         display: inline;
         padding: 10px 0 10px 10px;
     }
+    figure {
+        font-size: 0.7rem;
+    }
     .first {
         display: block;
+    }
+    #second {
+        font-size: 0.8rem;
     }
     form {
         display: block;
@@ -34,6 +40,12 @@ body {
     li {
         display: inline-block;
         padding: 10px 10px 10px 0;
+    }
+    figure {
+        font-size: 0.9rem;
+    }
+    #second {
+        font-size: 1rem;
     }
     form {
         display: flex;
@@ -79,7 +91,6 @@ article {
 }
 #second {
     color: white;
-    font-size: 1rem;
     padding: 0 10px 0 10px;
 }
 
@@ -90,6 +101,7 @@ article {
 .row3 img:last-child {
     width: 60%;
     object-fit: cover;
+    height: auto;
 }
 .row4 img:first-child {
     width: 50%;
@@ -102,6 +114,7 @@ article {
 .row4 {
     justify-content: space-between;
 }
+
 /****footer****/
 footer {
     background-color: white;
