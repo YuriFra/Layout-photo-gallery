@@ -20,7 +20,7 @@ body {
     main {
         display: grid;
         grid-template-rows: repeat(4, 90px);
-        grid-template-columns: 33.33% 33.33% 33.33%);
+        grid-template-columns: 33.33% 33.33% 33.33%;
     }
     figure {
         font-size: 0.7rem;
@@ -47,7 +47,7 @@ body {
     main {
         display: grid;
         grid-template-rows: repeat(4, 160px);
-        grid-template-columns: 33.33% 33.33% 33.33%);
+        grid-template-columns: 33.33% 33.33% 33.33%;
     }
     figure {
         font-size: 0.9rem;
